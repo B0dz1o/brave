@@ -2,5 +2,21 @@
 
 (defn foo
   "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+  [& x]
+;;  (brave.filter/newFoo 1)
+  (println x "Hello, World!")
+  -5) 
+
+(defn -main
+  "Main method"
+  [& args]
+  (foo "Brave, ")
+)
+
+(println "Cleanliness")
+
+(defn train
+  []
+  (println "Choo choo!"))
+
+(map)
