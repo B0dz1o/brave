@@ -19,4 +19,11 @@
   []
   (println "Choo choo!"))
 
-(map)
+(println (map (fn x (x % 4)) [0 1 2 3 4 5]))
+
+
+(def severity :mild)
+(def error-message "OH GOD! IT'S A DISASTER! WE'RE ")
+(if (= severity :mild)
+  (def error-message (str error-message "MILDLY INCONVENIENCED!"))
+  (def error-message (str error-message "DOOOOOOOMED!")))
